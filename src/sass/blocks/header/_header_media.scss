@@ -1,0 +1,155 @@
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .header {
+    nav {
+        ul {
+            gap: 15px;
+
+            li {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__contacts {
+        gap: 20px;
+
+        a {
+            font-size: 16px;
+        }
+
+        &-btn {
+            width: 170px;
+        }
+    }
+  }
+  
+}
+
+@media (max-width: 992px) {
+.container {
+    max-width: 720px;
+}
+
+.header {
+    margin: 10px 0;
+    &__nav {
+        &-pc {
+            display: none;
+        }
+
+        &-tablet {
+            display: block;
+            margin: 14px 0 18px 0;
+
+            ul {
+                gap: 40px;
+            }
+        }
+    }
+
+    &__contacts {
+        gap: 30px;
+
+        &-social {
+            display: flex;
+            gap: 20px;
+        }
+    }
+}
+
+.submenu {
+    ul {
+        li {
+            width: 100px;
+            font-size: 14px;
+            select {
+                font-size: 14px;
+                width: 100px;
+            }
+        }
+    }
+}
+
+.divider-nav-tablet {
+    display: block;
+}
+}
+
+@media (max-width: 768px) {
+.container {
+    max-width: 540px;
+    padding: 0 10px;
+}
+
+.header {
+    margin: 30px 0 27px 0;
+    
+    &__contacts {
+        display: none;
+    }
+
+    &__logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__burger {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        width: 35px;
+        height: 20px;
+        cursor: pointer;
+
+        span {
+            width: 35px;
+            height: 4px;
+            border-radius: 1px;
+            background: $blue-900;
+        }
+    }
+
+    &__call {
+        display: block;
+        width: 60px;
+        height: 40px;
+        box-sizing: border-box;
+        border: 1px solid $green-600;
+        border-radius: 3px;
+        background: $green-600;
+        padding: 10px 0 0 20px;
+        cursor: pointer;
+    }
+
+    &__nav {
+        &-tablet {
+            display: none;
+        }
+    }
+}
+
+.divider-nav-tablet {
+    display: none;
+}
+
+.divider-nav {
+    display: none;
+}
+
+.submenu {
+    display: none;
+}
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+ 
+}

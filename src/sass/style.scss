@@ -5,11 +5,43 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 @import 'base/variables';
+@import 'base/animation';
 
 .container {
     width: 1440px;
     margin: 0 auto;
 }
+
+main {
+    overflow: hidden;
+}
+
+
+//element
+@import 'blocks/title';
+@import 'blocks/button';
+
+//blocks
+@import 'blocks/header/header';
+@import 'blocks/hero/hero';
+@import 'blocks/price/price';
+@import 'blocks/exampless/examples';
+@import 'blocks/stock/stock';
+@import 'blocks/work/work';
+@import 'blocks/material/material';
+@import 'blocks/quality/quality';
+@import 'blocks/reviewss/reviews';
+
+//media
+@import 'blocks/header/header_media';
+@import 'blocks/hero/hero_media';
+@import 'blocks/price/price_media';
+@import 'blocks/exampless/examples_media';
+@import 'blocks/stock/stock_meadia';
+@import 'blocks/work/work_media';
+@import 'blocks/material/material_media';
+@import 'blocks/quality/quality_media';

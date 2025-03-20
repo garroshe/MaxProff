@@ -1,0 +1,15 @@
+.button {
+    width: 133px;
+    height: 48px;
+    border-radius: 4px;
+    background: $green-600;
+    color: $white-900;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+
+    &:hover {
+        background: $grey-400;
+        color: $green-600;
+    }
+}

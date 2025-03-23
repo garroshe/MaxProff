@@ -1,15 +1,32 @@
 .reviews {
     padding-top: 30px;
     background-color: $grey-100;
+    padding-bottom: 72px;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px 24px;
+        justify-content: center;
+        margin-top: 30px;
+    }
 
     &__item {
         width: 586px;
     }
 
     &__video {
+        position: relative;
         width: 100%;
         height: 298px;
         background-color: $black-600;
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 
     &__info {

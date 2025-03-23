@@ -1,0 +1,132 @@
+.team {
+    padding: 75px 0 90px 0;
+
+    &__skils {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        li {
+            position: relative;
+            color: $black-900;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21px;
+        }
+
+        li::after {
+            content: "";
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            background: $grey-100;
+            border-radius: 50%;
+            bottom: -55px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__divider {
+        width: 100%;
+        height: 6px;
+        background: $grey-100;
+        margin-top: 40px;
+    }
+
+    &__slider {
+        position: relative;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 84px;
+        align-items: center;
+    }
+
+    &__info {
+        &-title {
+            color: $green-600;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21px;
+            text-transform: uppercase;
+        }
+
+        &-subtitle {
+            color: $black-900;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21px;
+            margin: 15px 0;
+        }
+
+        &-desc {
+            color: $black-900;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            margin-bottom: 18px;
+        }
+
+        ul {
+            transform: translateX(15px);
+            li {
+                list-style-type: disc;
+                color: $black-900;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+            }
+        }
+    }
+
+    &__dots {
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        margin-top: 36px;
+    }
+
+    &__dot {
+        position: relative;
+        width: 18px;
+        height: 18px;
+        box-sizing: border-box;
+        border: 2px solid $blue-900;
+        background: $white-900;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &-active {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 2px solid $blue-900;
+            background: $blue-900;
+        }
+    }
+
+    &__arrow-left {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        cursor: pointer;
+    }
+
+    &__arrow-right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,150 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .masters {
+        &__slider {
+            overflow: hidden;
+        }
+
+        &__slides {
+            overflow: hidden;
+            transform: translateX(10px);
+            gap: 18px;
+        }
+
+        &__slide {
+            &-left {
+                display: none;
+            }
+
+            &-center {
+                width: 533px;
+            }
+
+            &-right {
+                width: 253px;
+            }
+        }
+
+        &__desc {
+            width: 450px;
+            padding: 74px 50px 0 35px;
+        }
+
+        &__video {
+            width: 470px;
+        }
+
+        &__info {
+            gap: 40px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .masters {
+        padding-top: 62px;
+        padding-bottom: 58px;
+        &__arrow-left {
+            top: 35%;
+        }
+
+        &__arrow-right {
+            top: 35%;
+        }
+
+        &__slides {
+            transform: translateX(100px);
+        }
+
+        &__slider {
+            margin-top: 54px;
+        }
+        
+        &__desc {
+            width: 345px;
+            height: 214px;
+            padding: 40px 20px 0 30px;
+        }
+
+        &__video {
+            width: 300px;
+            height: 214px;
+        }
+
+        &__info {
+            gap: 20px;
+            margin-top: 70px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+        padding: 0 10px;
+    }
+
+    .masters {
+        padding-top: 54px;
+        padding-bottom: 34px;
+        &-title {
+            font-size: 36px;
+        }
+
+        &__slider {
+            margin-top: 44px;
+        }
+
+        &__slides {
+            transform: translateX(0px);
+        }
+
+        &__slide {
+            &-right {
+                display: none;
+            }
+        }
+
+        &__desc {
+            width: 100%;
+            height: 220px;
+            padding: 40px 20px 0 30px;
+        }
+
+        &__video {
+            width: 100%;
+            height: 250px;
+        }
+
+        &__info {
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-top: 36px;
+            gap: 28px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .masters {
+        &__desc {
+            ul {
+                li {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

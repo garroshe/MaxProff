@@ -1,0 +1,52 @@
+.advice {
+    margin-top: 60px;
+    padding-top: 33px;
+    background: $green-600;
+    height: 100px;
+    width: 100%;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__header {
+        display: flex;
+        gap: 100px;
+        align-items: center;
+    }
+
+    &__title {
+        color: $white-900;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    &__text {
+        color: $white-900;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        width: 600px;
+    }
+
+    &__button {
+        width: 203px;
+        height: 48px;
+        box-sizing: border-box;
+        border: 2px solid $white-900;
+        border-radius: 31px;
+        color: $white-900;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        text-transform: uppercase;
+
+        &:hover {
+            border: 2px solid $black-600;
+            color: $grey-400;
+        }
+    }
+}

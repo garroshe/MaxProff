@@ -39,6 +39,8 @@ main {
 @import 'blocks/masters/masters';
 @import 'blocks/channel/channel';
 @import 'blocks/suppliers/suppliers';
+@import 'blocks/feedback/feedback';
+@import 'blocks/advice/advice';
 
 //media
 @import 'blocks/header/header_media';
@@ -54,3 +56,5 @@ main {
 @import 'blocks/masters/masters_media';
 @import 'blocks/channel/channel_media';
 @import 'blocks/suppliers/suppliers_media';
+@import 'blocks/feedback/feedback_media';
+@import 'blocks/advice/advice_media';

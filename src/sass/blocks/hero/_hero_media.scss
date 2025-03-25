@@ -139,6 +139,10 @@
         }
     }
 
+    &__overlay {
+        background: linear-gradient(89.43deg, #fff 3.541%, rgba(255, 255, 255, 0) 81.9%);
+    }
+
     input[type=range] {
         width: 350px;
     }

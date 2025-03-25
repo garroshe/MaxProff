@@ -1,0 +1,199 @@
+.footer {
+    width: 100%;
+    height: 315px;
+    background: $blue-700;
+    padding-top: 35px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 77px;
+    }
+
+    &__payment {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &-title {
+            color: $grey-400;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 15px;
+        }
+
+        &-wrapper {
+            display: flex;
+            gap: 5px;
+
+            img {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__services {
+        &-title {
+            color: $green-600;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 15px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            li {
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 15px;
+                margin-bottom: 8px;
+
+                a {
+                    color: $grey-400;
+                }
+            }
+        }
+    }
+
+    &__center {
+        ul {
+            li {
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 15px;
+                text-transform: uppercase;
+                margin-bottom: 12px;
+
+                a {
+                    color: $white-900;
+                }
+            }
+        }
+    }
+
+    &__right {
+        &-phone {
+            display: flex;
+            gap: 10px;
+
+            img {
+                animation: pulse 1.5s infinite;
+            }
+        }
+
+        &-number {
+            color: $white-900;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21px;
+        }
+
+        &-date {
+            color: $white-900;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            margin: 5px 0 5px 35px;
+        }
+
+        &-call {
+            a {
+            color: $green-600;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            text-decoration-line: underline;
+            margin-left: 35px;
+            }
+        }
+
+        &-mail {
+            display: flex;
+            gap: 10px;
+            cursor: pointer;
+
+            div {
+                color: $white-900;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                margin: 14px 0 16px 0;
+            }
+
+            img {
+                animation: pulse 1.5s infinite;
+            }
+        }
+
+        &-adress {
+            display: flex;
+            gap: 10px;
+            cursor: pointer;
+
+            div {
+                color: $white-900;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+            }
+
+            img {
+                animation: pulse 1.5s infinite;
+            }
+        }
+    }
+
+    &__divider {
+        width: 100%;
+        height: 1px;
+        background: $black-400;
+        margin: 30px 0 26px 0;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+
+        &-policy {
+            color: $black-400;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+
+            a {
+                color: $white-900;
+                text-decoration-line: underline;
+            }
+        }
+
+        &-social {
+            display: flex;
+            gap: 8px;
+        }
+
+        &-alert {
+            color: $black-400;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+
+        &-map {
+            color: $black-400;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            cursor: pointer;
+        }
+    }
+
+    &__social {
+        display: none;
+    }
+}

@@ -1,12 +1,12 @@
 {
-	"name": "portfolio_starter",
+	"name": "max_prof",
 	"version": "1.0.0",
 	"description": "",
 	"main": "gulpfile.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"dev": "gulp"
 	},
-	"author": "",
+	"author": "Taras",
 	"license": "ISC",
 	"devDependencies": {
 		"@eslint/js": "^9.21.0",

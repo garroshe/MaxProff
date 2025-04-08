@@ -1,3 +1,62 @@
+.channel {
+    padding: 70px 0 88px 0;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 394px 394px 394px;
+        grid-template-rows: 226px 226px;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    &__video {
+        position: relative;
+        width: 394px;
+        height: 226px;
+        background: $black-600;
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__dots {
+        display: none;
+        justify-content: center;
+        gap: 4px;
+        margin-top: 36px;
+    }
+
+    &__dot {
+        position: relative;
+        width: 18px;
+        height: 18px;
+        box-sizing: border-box;
+        border: 2px solid $blue-900;
+        background: $white-900;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &-active {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 2px solid $blue-900;
+            background: $blue-900;
+        }
+    }
+
+}
+
 @media (max-width: 1200px) {
     .container {
         max-width: 960px;
